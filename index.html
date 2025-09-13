@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>आरोग्य जागरूकता मोहीम</title>
+    <link rel="icon" type="image/png" href="img/8980091.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/11.2.2/framer-motion.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-purple-50">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-xl font-bold text-purple-700 mb-4 md:mb-0">
+                    आरोग्य जागरूकता
+                </div>
+                <div class="flex flex-wrap gap-2 md:gap-4 justify-center">
+                    <button onclick="scrollToSection('home')" class="px-3 py-2 rounded-lg transition-all text-purple-700 hover:bg-purple-100">Home</button>
+                    <button onclick="scrollToSection('topic1')" class="px-3 py-2 rounded-lg transition-all text-purple-700 hover:bg-purple-100">संतुलित आहार</button>
+                    <button onclick="scrollToSection('topic2')" class="px-3 py-2 rounded-lg transition-all text-purple-700 hover:bg-purple-100">मासिक पाळी जागरूकता</button>
+                    <button onclick="scrollToSection('topic3')" class="px-3 py-2 rounded-lg transition-all text-purple-700 hover:bg-purple-100">ॲनिमिया</button>
+                    <button onclick="scrollToSection('quiz')" class="px-3 py-2 rounded-lg transition-all text-purple-700 hover:bg-purple-100">Quiz</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section-container">
+        <div class="max-w-4xl mx-auto text-center">
+            <div id="home-content" class="bg-white rounded-2xl shadow-xl p-8 md:p-12 transition-all duration-800 opacity-0 transform translate-y-5">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-purple-800 mb-6">
+                    संतुलित आहार, मासिक पाळीची जागरूकता व ॲनिमिया
+                </h1>
+                <p class="text-lg md:text-xl text-gray-700 mb-8">
+                    आरोग्यपूर्ण जीवनासाठी मार्गदर्शन
+                </p>
+                <div class="mt-10">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0cf49aba-442d-474b-ab09-143628cf9596.png" 
+                        alt="Group of diverse students learning about health and nutrition in a classroom setting" 
+                        class="rounded-lg mx-auto shadow-md"
+                    />
+                </div>
+                <button onclick="scrollToSection('topic1')" class="mt-8 bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-6 rounded-lg transition-all transform hover:scale-105">
+                    सुरु करा
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topic 1: Balanced Diet -->
+    <section id="topic1" class="section-container bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-purple-800 mb-12">
+                संतुलित आहार
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-blue-50 p-6 rounded-xl shadow-md topic-slide opacity-0 transform translate-x-12">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-4">संतुलित आहार म्हणजे काय?</h3>
+                    <p class="text-gray-700 mb-4">शरीराला आवश्यक सगळ्या पोषक घटकांचा योग्य प्रमाणात असलेला आहार</p>
+                    <p class="text-gray-700 mb-4">आहाराचे गट: कार्बोहायड्रेट्स, प्रथिने, फॅट्स, जीवनसत्त्वे, खनिजे, पाणी</p>
+                    <p class="text-gray-700">उदाहरणे: भाकरी, भात, डाळ, दूध, फळे, भाज्या</p>
+                    <div class="mt-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/29ddaed5-5b2a-4ffe-bceb-2f9f3417e3ce.png" alt="Variety of healthy foods including grains, fruits, vegetables, and dairy products arranged in a balanced diet pattern" class="rounded-lg" />
+                    </div>
+                </div>
+                <div class="bg-green-50 p-6 rounded-xl shadow-md topic-slide opacity-0 transform -translate-x-12">
+                    <h3 class="text-xl font-semibold text-green-800 mb-4">संतुलित आहाराचे महत्त्व</h3>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>शरीराची वाढ व विकास योग्य होतो</li>
+                        <li>ऊर्जा व ताकद मिळते</li>
+                        <li>रोगप्रतिकारक शक्ती वाढते</li>
+                        <li>लठ्ठपणा, थकवा, आजार टाळता येतात</li>
+                    </ul>
+                    <div class="mt-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2d370fdf-c810-4897-a3c2-e286a2410835.png" alt="Happy healthy children playing and studying with energy from proper nutrition" class="rounded-lg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topic 2: Menstrual Awareness -->
+    <section id="topic2" class="section-container bg-purple-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-purple-800 mb-12">मासिक पाळी जागरूकता</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md topic-slide opacity-0 transform -translate-y-5">
+                    <h3 class="text-xl font-semibold text-purple-800 mb-4">मासिक पाळीची ओळख</h3>
+                    <p class="text-gray-700 mb-4">मुलींमध्ये होणारी नैसर्गिक प्रक्रिया</p>
+                    <p class="text-gray-700 mb-4">वय ११–१४ मध्ये सुरुवात</p>
+                    <p class="text-gray-700">नियमित पाळी म्हणजे चांगले आरोग्य</p>
+                    <div class="mt-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/79092d96-e72e-4c44-9bd7-84a28a39e153.png" alt="Educational illustration showing the menstrual cycle process and female reproductive health" class="rounded-lg" />
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md topic-slide opacity-0 transform -translate-y-5">
+                    <h3 class="text-xl font-semibold text-purple-800 mb-4">मासिक पाळी व स्वच्छता</h3>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>सॅनिटरी पॅड्स/स्वच्छ कापड वापरा</li>
+                        <li>४–५ तासांनी पॅड बदला</li>
+                        <li>हात नीट धुवा</li>
+                        <li>चुकीच्या स्वच्छतेमुळे इन्फेक्शन होऊ शकते</li>
+                    </ul>
+                    <div class="mt-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/375b878f-18d0-4187-9f3e-a2551dce3dd8.png" alt="Hygiene products and practices for menstrual health including sanitary pads and hand washing" class="rounded-lg" />
+                    </div>
+                </div>
+                <div class="bg-pink-50 p-6 rounded-xl shadow-md md:col-span-2 topic-slide opacity-0 transform -translate-y-5">
+                    <h3 class="text-xl font-semibold text-pink-800 mb-4">भावनिक बदल</h3>
+                    <p class="text-gray-700 mb-4">थकवा, चिडचिड, रडू येणे – सामान्य आहे</p>
+                    <p class="text-gray-700 mb-4">मुलींनी भीती बाळगू नये</p>
+                    <p class="text-gray-700">मुलांनीही समजून घ्यावे व मदत करावी</p>
+                    <div class="mt-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bc1f6bb0-8104-4951-8cc1-93e30d5bac7b.png" alt="Supportive environment showing friends and family providing emotional support during menstrual periods" class="rounded-lg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topic 3: Anemia -->
+    <section id="topic3" class="section-container bg-yellow-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-purple-800 mb-12">ॲनिमिया</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md topic-slide opacity-0 transform scale-90">
+                    <h3 class="text-xl font-semibold text-red-800 mb-4">ॲनिमिया म्हणजे काय?</h3>
+                    <p class="text-gray-700 mb-4">रक्तात हिमोग्लोबिन कमी होणे</p>
+                    <p class="text-gray-700">विद्यार्थ्यांमध्ये सामान्य समस्या</p>
+                    <div class="mt-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1a47b383-ad87-45ad-a6c2-dfc66284634c.png" alt="Medical illustration showing red blood cells and hemoglobin structure in the blood" class="rounded-lg" />
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md topic-slide opacity-0 transform scale-90">
+                    <h3 class="text-xl font-semibold text-red-800 mb-4">ॲनिमियाची कारणे</h3>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>लोखंडयुक्त आहार कमी घेणे</li>
+                        <li>मुलींमध्ये मासिक पाळीमुळे रक्त कमी होणे</li>
+                        <li>पोटातील जंतू</li>
+                    </ul>
+                    <div class="mt-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e995d067-1d5f-4cf2-a631-b02eac7b85cb.png" alt="Factors contributing to anemia including poor diet and menstrual blood loss" class="rounded-lg" />
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md topic-slide opacity-0 transform scale-90">
+                    <h3 class="text-xl font-semibold text-red-800 mb-4">ॲनिमियाची लक्षणे</h3>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>थकवा, दम लागणे</li>
+                        <li>पांढरट चेहरा, ओठ</li>
+                        <li>चक्कर येणे</li>
+                        <li>अभ्यासात लक्ष न लागणे</li>
+                    </ul>
+                    <div class="mt-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7205bc5f-fbc4-41cd-879f-4ac610fc864a.png" alt="Symptoms of anemia showing tired student struggling to concentrate in class" class="rounded-lg" />
+                    </div>
+                </div>
+                <div class="bg-green-50 p-6 rounded-xl shadow-md topic-slide opacity-0 transform scale-90">
+                    <h3 class="text-xl font-semibold text-green-800 mb-4">ॲनिमियावर उपाय</h3>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>हिरव्या पालेभाज्या: पालक, मेथी</li>
+                        <li>फळे: डाळिंब, खजूर, मनुके, लिंबू, संत्री</li>
+                        <li>डाळी, गूळ, दूध</li>
+                        <li>व्हिटॅमिन C असलेले पदार्थ लोखंड शोषायला मदत करतात</li>
+                    </ul>
+                    <div class="mt-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3eb614b9-4592-4c69-81b5-91841ec18a83.png" alt="Iron-rich foods including green vegetables, fruits, lentils and dairy products" class="rounded-lg" />
+                    </div>
+                </div>
+                <div class="bg-purple-100 p-6 rounded-xl shadow-md md:col-span-2 topic-slide opacity-0 transform -translate-y-5">
+                    <h3 class="text-xl font-semibold text-purple-800 mb-4">निष्कर्ष</h3>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>संतुलित आहार घ्या</li>
+                        <li>मासिक पाळीच्या वेळी स्वच्छता पाळा</li>
+                        <li>ॲनिमियापासून वाचण्यासाठी पौष्टिक आहार घ्या</li>
+                        <li>निरोगी राहणे म्हणजेच उज्ज्वल भविष्यासाठी गुंतवणूक</li>
+                    </ul>
+                    <div class="mt-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/863f1d33-7009-45ce-ad4e-751b32dcd808.png" alt="Happy healthy students with bright future prospects through proper health education" class="rounded-lg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="section-container bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-purple-800 mb-8">क्विझ</h2>
+            
+            <div class="flex justify-center mb-8">
+                <button id="translate-btn" class="bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-lg transition-all">
+                    मराठी मध्ये बदला
+                </button>
+            </div>
+
+            <div id="quiz-container">
+                <!-- Quiz questions will be dynamically rendered here -->
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-purple-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© sagar.jadhav_25</p>
+        </div>
+    </footer>
+
+    <script>
+        // Data and Logic
+        const quizData = {
+            en: [
+                { question: "Which food gives us protein?", options: ["Rice", "Milk", "Chips"], correctAnswer: 1 },
+                { question: "Which food should we eat less of?", options: ["Junk food", "Fruits", "Vegetables"], correctAnswer: 0 },
+                { question: "During periods, how often should a sanitary pad be changed?", options: ["Every 10 hours", "Every 4–5 hours", "Once a day"], correctAnswer: 1 },
+                { question: "Anemia happens when which part of the blood is low?", options: ["Hemoglobin", "White blood cells", "Platelets"], correctAnswer: 0 },
+                { question: "Which of these is rich in iron?", options: ["Pomegranate", "Ice cream", "Pizza"], correctAnswer: 0 }
+            ],
+            mr: [
+                { question: "प्रथिने कोणत्या अन्नातून मिळतात?", options: ["भात", "दूध", "चिप्स"], correctAnswer: 1 },
+                { question: "खालीलपैकी कोणते अन्न कमी खावे?", options: ["जंक फूड", "फळे", "भाज्या"], correctAnswer: 0 },
+                { question: "पाळीच्या काळात सॅनिटरी पॅड किती वेळाने बदलावे?", options: ["दर १० तासांनी", "दर ४–५ तासांनी", "दिवसातून फक्त १ वेळ"], correctAnswer: 1 },
+                { question: "ॲनिमिया होतो जेव्हा रक्तातील कोणता घटक कमी होतो?", options: ["हिमोग्लोबिन", "पांढऱ्या पेशी", "प्लेटलेट्स"], correctAnswer: 0 },
+                { question: "खालीलपैकी कोणते अन्न लोखंडाने भरपूर आहे?", options: ["डाळिंब", "आईस्क्रीम", "पिझ्झा"], correctAnswer: 0 }
+            ]
+        };
+
+        let isQuizTranslated = false;
+        const quizContainer = document.getElementById('quiz-container');
+        const translateBtn = document.getElementById('translate-btn');
+        let quizAnswers = Array(quizData.en.length).fill(-1);
+
+        function renderQuiz() {
+            const lang = isQuizTranslated ? 'mr' : 'en';
+            const questions = quizData[lang];
+            let quizHtml = '<div class="space-y-8">';
+            questions.forEach((q, qIndex) => {
+                quizHtml += `
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md transition-all duration-400 opacity-0 transform translate-y-5">
+                        <h3 class="text-xl font-semibold text-purple-800 mb-4">${qIndex + 1}. ${q.question}</h3>
+                        <div class="space-y-3">
+                            ${q.options.map((option, oIndex) => `
+                                <div class="flex items-center">
+                                    <input type="radio" id="q${qIndex}_o${oIndex}" name="question_${qIndex}" value="${oIndex}" class="h-4 w-4 text-purple-600 focus:ring-purple-500" ${quizAnswers[qIndex] === oIndex ? 'checked' : ''}>
+                                    <label for="q${qIndex}_o${oIndex}" class="ml-3 text-gray-700">${option}</label>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            });
+            quizHtml += `
+                </div>
+                <div class="text-center mt-8">
+                    <button id="submit-btn" class="bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-8 rounded-lg transition-all transform hover:scale-105">
+                        ${isQuizTranslated ? 'निकाल पहा' : 'See Results'}
+                    </button>
+                </div>
+            `;
+            quizContainer.innerHTML = quizHtml;
+
+            // Add event listeners for the rendered quiz
+            questions.forEach((q, qIndex) => {
+                const radios = document.querySelectorAll(`input[name="question_${qIndex}"]`);
+                radios.forEach(radio => {
+                    radio.addEventListener('change', (e) => {
+                        handleAnswerSelect(qIndex, parseInt(e.target.value));
+                    });
+                });
+            });
+
+            document.getElementById('submit-btn').addEventListener('click', calculateScore);
+
+            // Animate on render
+            const quizSlides = quizContainer.querySelectorAll('.transition-all');
+            quizSlides.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }, 100 * index);
+            });
+        }
+
+        function handleAnswerSelect(qIndex, oIndex) {
+            quizAnswers[qIndex] = oIndex;
+        }
+
+        function calculateScore() {
+            let score = 0;
+            const currentQuiz = isQuizTranslated ? quizData.mr : quizData.en;
+            for (let i = 0; i < currentQuiz.length; i++) {
+                if (quizAnswers[i] === currentQuiz[i].correctAnswer) {
+                    score++;
+                }
+            }
+            showResults(score);
+        }
+
+        function showResults(score) {
+            const lang = isQuizTranslated ? 'mr' : 'en';
+            const total = quizData[lang].length;
+            const resultHtml = `
+                <div id="results" class="text-center bg-green-50 p-8 rounded-xl shadow-md transition-all duration-500 opacity-0 transform scale-90">
+                    <h3 class="text-2xl font-bold text-green-800 mb-4">${isQuizTranslated ? 'तुमचा निकाल' : 'Your Score'}</h3>
+                    <div class="text-4xl font-bold text-green-700 mb-6">${score} / ${total}</div>
+                    <p class="text-gray-700 mb-6">${isQuizTranslated ? 'आरोग्याविषयी ज्ञानासाठी धन्यवाद!' : 'Thank you for learning about health!'}</p>
+                    <button id="reset-btn" class="bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-6 rounded-lg transition-all">
+                        ${isQuizTranslated ? 'पुन्हा प्रयत्न करा' : 'Try Again'}
+                    </button>
+                </div>
+            `;
+            quizContainer.innerHTML = resultHtml;
+            
+            document.getElementById('results').style.opacity = '1';
+            document.getElementById('results').style.transform = 'scale(1)';
+
+            document.getElementById('reset-btn').addEventListener('click', () => {
+                quizAnswers = Array(quizData.en.length).fill(-1);
+                renderQuiz();
+            });
+        }
+
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Animation on scroll
+        const observeElements = (elements, threshold, transform) => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = transform;
+                    }
+                });
+            }, { threshold: threshold });
+
+            elements.forEach(el => observer.observe(el));
+        };
+
+        // Initialize animations on load
+        window.addEventListener('load', () => {
+            // Home section animation
+            const homeContent = document.getElementById('home-content');
+            homeContent.style.opacity = '1';
+            homeContent.style.transform = 'translateY(0)';
+            
+            // Topic slides animations
+            const topicSlides = document.querySelectorAll('.topic-slide');
+            const topic1Slides = document.querySelectorAll('#topic1 .topic-slide');
+            const topic2Slides = document.querySelectorAll('#topic2 .topic-slide');
+            const topic3Slides = document.querySelectorAll('#topic3 .topic-slide');
+            
+            observeElements(topic1Slides, 0.4, 'translateX(0)');
+            observeElements(topic2Slides, 0.4, 'translateY(0)');
+            observeElements(topic3Slides, 0.4, 'scale(1)');
+            
+            renderQuiz();
+        });
+
+        // Translate button functionality
+        translateBtn.addEventListener('click', () => {
+            isQuizTranslated = !isQuizTranslated;
+            translateBtn.textContent = isQuizTranslated ? 'English' : 'मराठी मध्ये बदला';
+            renderQuiz();
+        });
+    </script>
+
+</body>
+</html>
